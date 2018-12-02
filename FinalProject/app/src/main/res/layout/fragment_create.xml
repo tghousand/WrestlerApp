@@ -1,0 +1,395 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CreateFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tghousand.finalproject.CreateFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:id="@+id/scollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create A Wrestler"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="45dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:text="Name:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/nameInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/genderView"
+                    android:layout_width="213dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Gender:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/genderButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/maleButton"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/femaleButton"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="Female" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/heightText"
+                    android:layout_width="45dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:text="Height:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/heightFeet"
+                    android:layout_width="26dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Feet"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/ftText"
+                    android:layout_width="3dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:text="ft."
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/heightInches"
+                    android:layout_width="62dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Inches"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/weightView"
+                    android:layout_width="45dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:text="Weight:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/weightInput"
+                    android:layout_width="137dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Pounds"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/lbsView"
+                    android:layout_width="17dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:text="lbs."
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/homeView"
+                    android:layout_width="45dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:text="Home Town:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/homeInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Home Town"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/stateView"
+                    android:layout_width="45dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:text="State:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/stateInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="State (If Applicable)"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/countryView"
+                    android:layout_width="45dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:text="Country:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/countryInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="County"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/selectPicView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Select Profile Picture"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/pictureButtons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/mikeButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/mikeselectable"
+                            android:checked="false"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/danielButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/danielselector" />
+
+                        <RadioButton
+                            android:id="@+id/finnButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/finnselector" />
+
+                        <RadioButton
+                            android:id="@+id/jasonButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/jasonselector" />
+
+                        <RadioButton
+                            android:id="@+id/xavierButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/xavierselector" />
+
+                        <RadioButton
+                            android:id="@+id/bobbyButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/bobbyselector" />
+
+                        <RadioButton
+                            android:id="@+id/mustafaButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/mustafaselector" />
+
+                        <RadioButton
+                            android:id="@+id/primoButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/primoselector" />
+
+                        <RadioButton
+                            android:id="@+id/hideoButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/hideoselector" />
+
+                        <RadioButton
+                            android:id="@+id/metalikButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/metalikselector" />
+
+                        <RadioButton
+                            android:id="@+id/caraButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/caraselector" />
+
+                        <RadioButton
+                            android:id="@+id/alexaButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/alexaselector" />
+
+                        <RadioButton
+                            android:id="@+id/aliciaButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/aliciaselector" />
+
+                        <RadioButton
+                            android:id="@+id/beckyButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/beckyselector" />
+
+                        <RadioButton
+                            android:id="@+id/emberButton"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/emberselector" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/createButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE!"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/whiteSpace"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="about">About</string>
+    <string name="create">Create Wrestler</string>
+    <string name="view">View Wrestlers</string>
+    <string name="info">\tThis is the final project for Computer Science 343, Mobile Application Development for Prof. Fuchs. It was coded entirely by myself, Tyler Housand, using skills learned over the course of the semester.
+        \n\tIn this application, the use is given the opportunity to input information to create a fictional wrestler with statistics that the user inputs. Then, the user can go and look at the statistics that they put in for their created wrestlers.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
